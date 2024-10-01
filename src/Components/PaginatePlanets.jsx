@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid'
 

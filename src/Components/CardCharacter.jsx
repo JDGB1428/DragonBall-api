@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom"
 
 const CardCharacter = ({character}) => {
@@ -8,7 +9,9 @@ const CardCharacter = ({character}) => {
                 <img src={image} className="w-64 h-auto p-2" alt=""/>
             </div>
             <div className="p-5 space-y-3">
-                <Link to={`/character/${id}`} className="font-bold uppercase text-md text-amber-600">Nombre: <span className="text-gray-500">{name}</span></Link>
+                <Link to={`/character/${id}`} className="font-bold uppercase text-md text-amber-600">
+                    Nombre: <span className="text-gray-500">{name}</span>
+                </Link>
                 <p className="font-bold uppercase text-md text-amber-600">Genero: <span className="text-gray-500">{gender}</span> </p>
                 <p className="font-bold uppercase text-md text-amber-600">Raza: <span className="text-gray-500">{race}</span></p>
                 <p className="font-bold uppercase text-md text-amber-600">Ki base: <span className="text-gray-500">{ki}</span></p>
